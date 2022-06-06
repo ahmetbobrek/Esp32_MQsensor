@@ -15,9 +15,10 @@ public:
 mqsensor(String Board,float Voltage_Resolution,int ADC_Bit_Resolution,int pin,String type);
 mqsensor(String Board,String type);
 void init();
-
-void getVoltage(bool read,bool injected,int value);
 void update();
+/*float getVoltage(bool read = true, bool injected = false, int value = 0);*/
+float getVoltage(bool read=true,bool injected=false,int value=0);
+
 
 private:
 /*
@@ -39,6 +40,7 @@ byte _ADC_Bit_Resolution;
 byte _pin;
 char _type[6];
 float _adc;
+float _sensor_volt;
 
 
 };
