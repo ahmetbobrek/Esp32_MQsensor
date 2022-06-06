@@ -10,6 +10,10 @@
 #define         ADC_Bit_Resolution      (12) // ESP-32 bit resolution. Source: https://randomnerdtutorials.com/esp32-adc-analog-read-arduino-ide/
 #define         RatioMQ2CleanAir        (9.83) //RS / R0 = 9.83 ppm
 
+/*#define ADC_RESOLUTION 10 // for 10bit analog to digital converter.
+#define retries 2
+#define retry_interval 20*/
+
 /*****Global*****/
 mqsensor MQ2(Board,Voltage_Resolution,ADC_Bit_Resolution,Pin,Type);
 /*****************************Globals***********************************************/

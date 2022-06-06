@@ -16,7 +16,31 @@ mqsensor::mqsensor(String Board,String type){
 void mqsensor::init(){
     pinMode(_pin,INPUT);
 }
-void mqsensor::getVoltage(){
+
+void mqsensor::getVoltage(bool read,bool injected,int value){
+/*float voltage;
+  if(read)
+  {
+    float avg = 0.0;
+    for (int i = 0; i < retries; i ++) {
+      _adc = analogRead(this->_pin);
+      avg += _adc;
+      delay(retry_interval);
+    }
+    voltage = (avg/ retries) * _VOLT_RESOLUTION / ((pow(2, _ADC_Bit_Resolution)) - 1);*/
+    float voltage;
+    if (read)
+    {
+    float avg=0.0;
+    for (int i = 0; i < retries; i++)
+    {
+        _adc=analogRead(this->_pin);
+        avg+=_adc;
+        delay(retry_interval);
+    }
+    voltage=(avg/retries)*_Voltage_Resolution/(pow(2,_ADC_Bit_Resolution)-1);
+    
+    }
     
 }
 void mqsensor::update(){

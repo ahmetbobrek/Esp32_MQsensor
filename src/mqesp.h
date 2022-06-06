@@ -3,6 +3,9 @@
 
 #include <Arduino.h>
 #include <stdint.h>
+/*Software Macros*/
+#define         retries                 2
+#define         retry_interval          20
 
 class mqsensor{
 
@@ -12,7 +15,8 @@ public:
 mqsensor(String Board,float Voltage_Resolution,int ADC_Bit_Resolution,int pin,String type);
 mqsensor(String Board,String type);
 void init();
-void getVoltage();
+
+void getVoltage(bool read,bool injected,int value);
 void update();
 
 private:
@@ -34,6 +38,7 @@ float _Voltage_Resolution;
 byte _ADC_Bit_Resolution;
 byte _pin;
 char _type[6];
+float _adc;
 
 
 };
