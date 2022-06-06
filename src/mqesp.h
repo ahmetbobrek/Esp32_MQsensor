@@ -15,9 +15,19 @@ public:
 mqsensor(String Board,float Voltage_Resolution,int ADC_Bit_Resolution,int pin,String type);
 mqsensor(String Board,String type);
 void init();
-void update();
-/*float getVoltage(bool read = true, bool injected = false, int value = 0);*/
 float getVoltage(bool read=true,bool injected=false,int value=0);
+void update();
+void externalADCUpdate(float volt);
+void setR0(float R0 = 10);
+void setRL(float RL = 10);
+void setA(float a);
+void setB(float b);
+void setRegressionMethod(int regressionMethod);
+void setVoltResolution(float voltage_resolution =  5);
+void serialDebug(bool onSetup = false); //Show on serial port information about sensor
+void setADC(int value); //For external ADC Usage
+
+
 
 
 private:
@@ -41,6 +51,16 @@ byte _pin;
 char _type[6];
 float _adc;
 float _sensor_volt;
+float _R0;
+float _RL=10;//kiloohms
+float _a;
+float _b;
+byte _regressionMethod = 1; // 1 -> Exponential || 2 -> Linear
+float _VOLT_RESOLUTION  = 5.0; // if 3.3v use 3.3
+byte _firstFlag = false;
+float _RS_Calc;
+float _ratio;
+float _PPM;
 
 
 };
