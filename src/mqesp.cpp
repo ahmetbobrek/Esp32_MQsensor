@@ -108,3 +108,8 @@ void mqsensor::serialDebug(bool onSetup)
     }
   }
 }
+void mqsensor::setADC(int value)
+{
+  this-> _sensor_volt = (value) * _VOLT_RESOLUTION / ((pow(2, _ADC_Bit_Resolution)) - 1); 
+  this-> _adc =  value;
+}

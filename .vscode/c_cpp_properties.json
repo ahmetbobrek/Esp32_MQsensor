@@ -10,6 +10,7 @@
             "includePath": [
                 "c:/Users/USER/Desktop/Esp32_MQsensor/include",
                 "c:/Users/USER/Desktop/Esp32_MQsensor/src",
+                "C:/Users/USER/.platformio/packages/framework-arduinoespressif32/libraries/WiFi/src",
                 "c:/Users/USER/Desktop/Esp32_MQsensor/.pio/libdeps/esp32dev/MQUnifiedsensor/src",
                 "C:/Users/USER/.platformio/packages/framework-arduinoespressif32/tools/sdk/include/config",
                 "C:/Users/USER/.platformio/packages/framework-arduinoespressif32/tools/sdk/include/app_trace",
@@ -101,7 +102,6 @@
                 "C:/Users/USER/.platformio/packages/framework-arduinoespressif32/libraries/Ticker/src",
                 "C:/Users/USER/.platformio/packages/framework-arduinoespressif32/libraries/Update/src",
                 "C:/Users/USER/.platformio/packages/framework-arduinoespressif32/libraries/WebServer/src",
-                "C:/Users/USER/.platformio/packages/framework-arduinoespressif32/libraries/WiFi/src",
                 "C:/Users/USER/.platformio/packages/framework-arduinoespressif32/libraries/WiFiClientSecure/src",
                 "C:/Users/USER/.platformio/packages/framework-arduinoespressif32/libraries/WiFiProv/src",
                 "C:/Users/USER/.platformio/packages/framework-arduinoespressif32/libraries/Wire/src",
@@ -113,6 +113,7 @@
                 "path": [
                     "c:/Users/USER/Desktop/Esp32_MQsensor/include",
                     "c:/Users/USER/Desktop/Esp32_MQsensor/src",
+                    "C:/Users/USER/.platformio/packages/framework-arduinoespressif32/libraries/WiFi/src",
                     "c:/Users/USER/Desktop/Esp32_MQsensor/.pio/libdeps/esp32dev/MQUnifiedsensor/src",
                     "C:/Users/USER/.platformio/packages/framework-arduinoespressif32/tools/sdk/include/config",
                     "C:/Users/USER/.platformio/packages/framework-arduinoespressif32/tools/sdk/include/app_trace",
@@ -204,7 +205,6 @@
                     "C:/Users/USER/.platformio/packages/framework-arduinoespressif32/libraries/Ticker/src",
                     "C:/Users/USER/.platformio/packages/framework-arduinoespressif32/libraries/Update/src",
                     "C:/Users/USER/.platformio/packages/framework-arduinoespressif32/libraries/WebServer/src",
-                    "C:/Users/USER/.platformio/packages/framework-arduinoespressif32/libraries/WiFi/src",
                     "C:/Users/USER/.platformio/packages/framework-arduinoespressif32/libraries/WiFiClientSecure/src",
                     "C:/Users/USER/.platformio/packages/framework-arduinoespressif32/libraries/WiFiProv/src",
                     "C:/Users/USER/.platformio/packages/framework-arduinoespressif32/libraries/Wire/src",
